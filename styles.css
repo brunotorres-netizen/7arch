@@ -35,6 +35,7 @@
   --verde:       #4A5240;
   --musgo:       #5C6B4F;
   --texto:       #3A3632;
+  --marrom:      #3A3632;
   --fundo:       #FAFAF8;
   --dourado:     #B8A88A;
   --dourado-escuro: #9E8E74;
@@ -726,7 +727,7 @@ p {
    9. NÚMEROS / CREDIBILIDADE
    ============================================================ */
 #numeros {
-  background: var(--verde);
+  background: var(--marrom);
   position: relative;
   overflow: hidden;
 }
@@ -962,7 +963,7 @@ p {
    12. TRANSFORMAÇÕES
    ============================================================ */
 #transformacoes {
-  background: var(--verde);
+  background: var(--marrom);
   color: var(--bege);
 }
 #transformacoes .section-title,
@@ -1370,6 +1371,11 @@ textarea:focus-visible {
   .processo-steps { grid-template-columns: repeat(4, 1fr); }
   .processo-steps::before { display: none; }
   .step { padding: 4rem 0.5rem 1rem; }
+}
+
+/* --- 1366px: Laptop Windows (Lenovo, Dell, etc.) --- */
+@media (max-width: 1366px) {
+  .hero-content h1 { font-size: clamp(2rem, 4vw, 3.5rem); }
 }
 
 /* --- 1024px: Tablet landscape --- */
