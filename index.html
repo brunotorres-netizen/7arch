@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Especialistas em projetos de arquitetura e interiores para apartamentos recém-entregues. Mais de 100 projetos em São Paulo. Solicite seu orçamento.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="7arch | Arquitetura e Interiores para Apartamentos Novos em São Paulo">
+  <meta property="og:description" content="Especialistas em projetos de arquitetura e interiores para apartamentos recém-entregues. Mais de 100 projetos em São Paulo.">
+  <meta property="og:image" content="./images/hero.png">
+  <meta property="og:url" content="https://7arch.com.br">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>7arch | Arquitetura e Interiores para Apartamentos Novos em São Paulo</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header id="header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="#inicio" class="logo" aria-label="7arch — página inicial">
+          <img src="./images/logo.jpg" alt="7arch logo" width="40" height="40">
+          <span class="logo-text">7arch</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#processo">Como Funciona</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+           class="nav-cta" aria-label="Solicitar orçamento via WhatsApp">
+          Solicite um Orçamento
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+    <a href="#inicio" class="mobile-link">Início</a>
+    <a href="#projetos" class="mobile-link">Projetos</a>
+    <a href="#processo" class="mobile-link">Como Funciona</a>
+    <a href="#sobre" class="mobile-link">Sobre</a>
+    <a href="#contato" class="mobile-link">Contato</a>
+    <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+      Solicitar Orçamento
+    </a>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         1. HERO
+    ============================================================ -->
+    <section id="inicio" aria-label="Apresentação">
+      <div id="hero">
+        <div class="hero-bg" id="hero-bg" role="img" aria-label="Projeto de interiores 7arch — sala de estar contemporânea"></div>
+        <div class="hero-overlay"></div>
+        <span class="hero-seven" aria-hidden="true">7</span>
+
+        <div class="container">
+          <div class="hero-content">
+            <span class="label">São Paulo · Arquitetura e Interiores</span>
+            <h1>Transformamos apartamentos<br>recém-entregues em lares<br>com a sua identidade</h1>
+            <p class="hero-sub">Especialistas em projetos de arquitetura e interiores para apartamentos novos em São Paulo</p>
+            <div class="hero-btns">
+              <a href="#projetos" class="btn btn-outline" aria-label="Ver projetos realizados">
+                Ver Projetos
+                <span class="arrow-right" aria-hidden="true">→</span>
+              </a>
+              <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-primary" aria-label="Falar com 7arch pelo WhatsApp">
+                Fale Conosco
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="scroll-indicator" onclick="document.getElementById('proposta').scrollIntoView({behavior:'smooth'})" aria-label="Rolar para baixo">
+          <span>Scroll</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. PROPOSTA DE VALOR
+    ============================================================ -->
+    <section id="proposta" class="section-pad" aria-labelledby="proposta-titulo">
+      <div class="container">
+
+        <div class="proposta-intro">
+          <h2 id="proposta-titulo" class="animate">Seu apartamento novo merece um projeto à altura</h2>
+          <p class="animate animate-delay-1">Você acabou de receber as chaves e não sabe por onde começar? Nós transformamos essa ansiedade em um processo organizado, seguro e com resultado impecável — do conceito à entrega da obra.</p>
+        </div>
+
+        <div class="beneficios-grid">
+
+          <div class="beneficio-card animate animate-delay-1">
+            <svg class="beneficio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+            </svg>
+            <h3>Projeto Completo</h3>
+            <p>Do conceito à execução, cuidamos de tudo. Você acompanha cada etapa com tranquilidade.</p>
+          </div>
+
+          <div class="beneficio-card animate animate-delay-2">
+            <svg class="beneficio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+            </svg>
+            <h3>Sem Surpresas</h3>
+            <p>Processo claro que evita erros e retrabalho. Cronograma definido, orçamento respeitado.</p>
+          </div>
+
+          <div class="beneficio-card animate animate-delay-3">
+            <svg class="beneficio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
+            </svg>
+            <h3>Obra Inclusa</h3>
+            <p>Equipe completa de execução, acompanhamento e gerenciamento de obra do início ao fim.</p>
+          </div>
+
+          <div class="beneficio-card animate animate-delay-4">
+            <svg class="beneficio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+            </svg>
+            <h3>Especialistas</h3>
+            <p>Foco exclusivo em apartamentos novos. Mais de 100 projetos entregues em São Paulo.</p>
+          </div>
+
+        </div>
+
+        <div class="proposta-cta animate">
+          <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary" aria-label="Iniciar projeto via WhatsApp">
+            Quero começar meu projeto
+            <span class="arrow-right" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. PORTFÓLIO
+    ============================================================ -->
+    <section id="projetos" class="section-pad" aria-labelledby="projetos-titulo">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="label animate">Portfólio</span>
+          <h2 id="projetos-titulo" class="animate animate-delay-1">Nossos Projetos</h2>
+          <p class="animate animate-delay-2">Cada espaço conta uma história. Conheça algumas das nossas transformações.</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <!-- Card 1 — wide -->
+          <article class="projeto-card wide animate animate-delay-1" aria-label="Projeto J+M — Sala de Estar">
+            <img src="./images/projeto-1.png" alt="Sala de estar contemporânea com paleta neutra — Apartamento J+M, Moema" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 140m²</span>
+                <h3>Apto J+M — Moema</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 — medium -->
+          <article class="projeto-card medium animate animate-delay-2" aria-label="Projeto J+M — Dormitório">
+            <img src="./images/projeto-2.png" alt="Dormitório elegante com iluminação planejada — Apartamento J+M" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Dormitório</span>
+                <h3>Apto J+M — Brooklin</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="projeto-card animate animate-delay-1" aria-label="Projeto NS">
+            <img src="./images/projeto-3.png" alt="Sala integrada com acabamentos sofisticados — Apartamento NS" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 120m²</span>
+                <h3>Apto NS — Jardins</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="projeto-card animate animate-delay-2" aria-label="Projeto E+F">
+            <img src="./images/projeto-4.png" alt="Interiores modernos com tonalidades terrosas — Projeto E+F" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 95m²</span>
+                <h3>Apto E+F — Campo Belo</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="projeto-card animate animate-delay-3" aria-label="Projeto AP">
+            <img src="./images/projeto-5.png" alt="Ambientes integrados com design minimalista — Apartamento AP" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 200m²</span>
+                <h3>Apto AP — Jardim Europa</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="projeto-card animate animate-delay-4" aria-label="Projeto D+K">
+            <img src="./images/projeto-6.png" alt="Cozinha planejada com ilha central — Apartamento D+K" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 85m²</span>
+                <h3>Apto D+K — Vila Nova Conceição</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="projeto-card animate animate-delay-5" aria-label="Projeto IP">
+            <img src="./images/projeto-7.png" alt="Varanda gourmet integrada à sala de estar — Apartamento IP" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 160m²</span>
+                <h3>Apto IP — Itaim Bibi</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="projeto-card animate animate-delay-6" aria-label="Projeto DI">
+            <img src="./images/projeto-8.png" alt="Home office integrado com ambientes de convivência — Projeto DI" loading="lazy">
+            <div class="projeto-overlay">
+              <div class="projeto-info">
+                <span class="label">Apartamento 110m²</span>
+                <h3>Apto DI — Pinheiros</h3>
+                <span class="projeto-ver" aria-hidden="true">Ver projeto →</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="portfolio-cta animate">
+          <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+             class="btn btn-ghost" aria-label="Falar sobre seu apartamento pelo WhatsApp">
+            Fale com a gente sobre seu apartamento
+            <span class="arrow-right" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. NÚMEROS / CREDIBILIDADE
+    ============================================================ -->
+    <section id="numeros" class="section-pad" aria-label="Números e credibilidade">
+      <span class="numeros-seven" aria-hidden="true">7</span>
+      <div class="container">
+        <div class="numeros-inner">
+
+          <div class="numero-item animate animate-delay-1">
+            <div class="numero-valor">
+              <span class="prefix">+</span><span class="count" data-target="100">0</span>
+            </div>
+            <span class="numero-label">Projetos entregues</span>
+          </div>
+
+          <div class="numero-divider" aria-hidden="true"></div>
+
+          <div class="numero-item animate animate-delay-2">
+            <div class="numero-valor">
+              <span class="prefix">+</span><span class="count" data-target="10400" data-format="area">0</span>
+              <span class="suffix"> m²</span>
+            </div>
+            <span class="numero-label">Reformados em São Paulo</span>
+          </div>
+
+          <div class="numero-divider" aria-hidden="true"></div>
+
+          <div class="numero-item animate animate-delay-3">
+            <div class="numero-valor" style="font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: 1.2;">
+              SP · Brasil<br><span style="color: var(--dourado); font-size: 0.7em;">e Exterior</span>
+            </div>
+            <span class="numero-label">Áreas de atuação</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. COMO FUNCIONA / PROCESSO
+    ============================================================ -->
+    <section id="processo" class="section-pad" aria-labelledby="processo-titulo">
+      <div class="container">
+
+        <div class="section-header" style="text-align: center; margin-inline: auto; max-width: 620px;">
+          <span class="label animate">Metodologia</span>
+          <h2 id="processo-titulo" class="animate animate-delay-1">Como funciona</h2>
+          <p class="animate animate-delay-2">Um processo transparente do primeiro contato à entrega das chaves — sem surpresas, sem retrabalho.</p>
+        </div>
+
+        <div class="processo-steps">
+
+          <div class="step animate animate-delay-1">
+            <div class="step-number" aria-hidden="true">01</div>
+            <h4>Pré-briefing</h4>
+            <p>Você nos conta sobre seu apartamento, estilo de vida e expectativas.</p>
+          </div>
+
+          <div class="step animate animate-delay-2">
+            <div class="step-number" aria-hidden="true">02</div>
+            <h4>Apresentação de Proposta</h4>
+            <p>Call para alinhar escopo, prazo e investimento do projeto.</p>
+          </div>
+
+          <div class="step animate animate-delay-3">
+            <div class="step-number" aria-hidden="true">03</div>
+            <h4>Briefing Detalhado</h4>
+            <p>Mergulhamos no seu estilo de vida, rotinas e necessidades.</p>
+          </div>
+
+          <div class="step animate animate-delay-4">
+            <div class="step-number" aria-hidden="true">04</div>
+            <h4>Anteprojeto</h4>
+            <p>Primeiras ideias e layouts apresentados para sua aprovação.</p>
+          </div>
+
+          <div class="step animate animate-delay-5">
+            <div class="step-number" aria-hidden="true">05</div>
+            <h4>Projeto de Interiores</h4>
+            <p>Detalhamento completo de materiais, móveis e acabamentos.</p>
+          </div>
+
+          <div class="step animate animate-delay-6">
+            <div class="step-number" aria-hidden="true">06</div>
+            <h4>Projeto Executivo</h4>
+            <p>Documentação técnica e indicação de fornecedores para obra perfeita.</p>
+          </div>
+
+          <div class="step animate animate-delay-7">
+            <div class="step-number" aria-hidden="true">07</div>
+            <h4>Execução e Acompanhamento</h4>
+            <p>Nossa equipe cuida da obra com acompanhamento e gerenciamento completo.</p>
+          </div>
+
+        </div>
+
+        <div class="processo-cta animate">
+          <a href="#contato" class="btn btn-primary" aria-label="Começar processo com a 7arch">
+            Começar agora
+            <span class="arrow-right" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. SOBRE NÓS
+    ============================================================ -->
+    <section id="sobre" class="section-pad" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="sobre-grid">
+
+          <div class="sobre-imagem-wrap animate">
+            <img src="./images/sobre.jpg"
+                 alt="Christal e Rodrigo, fundadores da 7arch Arquitetura e Interiores"
+                 loading="lazy">
+          </div>
+
+          <div class="sobre-content">
+            <span class="label animate">Quem somos</span>
+            <h2 id="sobre-titulo" class="animate animate-delay-1">A história por trás dos projetos</h2>
+
+            <p class="sobre-texto animate animate-delay-2">
+              O nascimento do escritório se deu em 2017, após o casal fundador voltar de uma vivência no exterior com uma bagagem muito grande — cheia de referências — e vontade de juntar à paixão pela profissão, em um único lugar.
+            </p>
+            <p class="sobre-texto animate animate-delay-3">
+              Desde então, já são mais de 100 projetos transformando apartamentos em lares com personalidade em São Paulo. Realizamos toda a parte de execução de obra com equipe completa, acompanhamento e gerenciamento — para que você não precise se preocupar com nada.
+            </p>
+
+            <div class="sobre-tags animate animate-delay-4">
+              <span class="sobre-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+                Desde 2017
+              </span>
+              <span class="sobre-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+                +100 projetos
+              </span>
+              <span class="sobre-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                SP · Brasil · Exterior
+              </span>
+            </div>
+
+            <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary animate animate-delay-5" aria-label="Iniciar conversa com a 7arch">
+              Iniciar meu projeto
+              <span class="arrow-right" aria-hidden="true">→</span>
+            </a>
+
+            <div class="atuacao-banner animate animate-delay-6">
+              <span class="label">Onde atuamos</span>
+              <p>Obras em São Paulo — Moema, Brooklin, Jardins, Jardim Europa e Campo Belo e toda a cidade. Projetos de interiores para todo o Brasil e exterior.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CONTATO
+    ============================================================ -->
+    <section id="contato" class="section-pad" aria-labelledby="contato-titulo">
+      <div class="container">
+
+        <div class="section-header" style="text-align: center; margin-inline: auto; max-width: 540px;">
+          <span class="label animate">Vamos começar?</span>
+          <h2 id="contato-titulo" class="animate animate-delay-1">Vamos começar o seu projeto?</h2>
+          <p class="animate animate-delay-2">Escolha a melhor forma de falar com a gente</p>
+        </div>
+
+        <div class="contato-grid">
+
+          <!-- Formulário -->
+          <div class="contato-form-wrap animate animate-delay-1">
+            <h3>Pré-briefing</h3>
+            <p>Preencha e entraremos em contato em até 24 horas.</p>
+
+            <form id="contato-form" novalidate aria-label="Formulário de pré-briefing">
+              <div class="form-row">
+                <div class="form-group" id="group-nome">
+                  <label for="nome">Nome *</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome completo"
+                         required autocomplete="name" aria-required="true">
+                  <span class="error-msg" role="alert">Por favor, informe seu nome.</span>
+                </div>
+                <div class="form-group" id="group-email">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com"
+                         required autocomplete="email" aria-required="true">
+                  <span class="error-msg" role="alert">Informe um e-mail válido.</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group" id="group-telefone">
+                  <label for="telefone">Telefone *</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 0000-0000"
+                         required autocomplete="tel" aria-required="true">
+                  <span class="error-msg" role="alert">Informe seu telefone.</span>
+                </div>
+                <div class="form-group" id="group-bairro">
+                  <label for="bairro">Bairro do apartamento *</label>
+                  <input type="text" id="bairro" name="bairro" placeholder="Ex: Moema, Brooklin…"
+                         required aria-required="true">
+                  <span class="error-msg" role="alert">Informe o bairro.</span>
+                </div>
+              </div>
+              <div class="form-group" id="group-metragem">
+                <label for="metragem">Metragem aproximada</label>
+                <input type="text" id="metragem" name="metragem" placeholder="Ex: 90m², 120m²…">
+              </div>
+              <div class="form-group full" id="group-mensagem">
+                <label for="mensagem">Mensagem (opcional)</label>
+                <textarea id="mensagem" name="mensagem" rows="4"
+                          placeholder="Conte um pouco sobre o seu apartamento e o que você está buscando…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn" aria-label="Enviar pré-briefing">
+                Enviar pré-briefing
+                <span class="arrow-right" aria-hidden="true">→</span>
+              </button>
+            </form>
+
+            <div class="form-success" id="form-success" aria-live="polite">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <h3>Obrigado!</h3>
+              <p>Recebemos seu pré-briefing. Entraremos em contato em até 24 horas.</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="contato-wpp-wrap animate animate-delay-2">
+
+            <div class="wpp-card">
+              <svg class="wpp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <h3>Prefere pelo WhatsApp?</h3>
+              <p>Resposta imediata. Fale diretamente com nossa equipe e tire todas as suas dúvidas.</p>
+              <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+                 class="btn-wpp-big" aria-label="Abrir conversa no WhatsApp com a 7arch">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Chamar no WhatsApp
+              </a>
+            </div>
+
+            <div class="contato-info">
+              <div class="contato-info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                </svg>
+                <a href="mailto:contato@7arch.com.br" aria-label="Enviar e-mail para a 7arch">contato@7arch.com.br</a>
+              </div>
+              <div class="contato-info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                </svg>
+                <span>São Paulo — SP e Brasil</span>
+              </div>
+              <div class="contato-info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                </svg>
+                <a href="tel:+5511933830735" aria-label="Ligar para a 7arch">(11) 93383-0735</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img src="./images/logo.jpg" alt="7arch logo" width="36" height="36">
+          <p>Arquitetura e interiores para apartamentos novos em São Paulo. Do conceito à entrega da obra.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Navegação</h4>
+          <nav class="footer-links" aria-label="Links do rodapé">
+            <a href="#inicio">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#processo">Como Funciona</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+          </nav>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <div class="footer-links">
+            <a href="mailto:contato@7arch.com.br" aria-label="Email da 7arch">contato@7arch.com.br</a>
+            <a href="tel:+5511933830735" aria-label="Telefone da 7arch">(11) 93383-0735</a>
+            <span style="color: color-mix(in srgb, var(--greige) 60%, transparent); font-size: 0.88rem;">São Paulo — SP e Brasil</span>
+          </div>
+          <div class="footer-social" style="margin-top: 1.25rem;">
+            <a href="https://www.instagram.com/7arch.arquitetura/" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="Instagram da 7arch — @7arch.arquitetura">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="WhatsApp da 7arch">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 7arch Arquitetura e Interiores. Todos os direitos reservados.</span>
+        <a href="https://www.instagram.com/7arch.arquitetura/" target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram @7arch.arquitetura">@7arch.arquitetura</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/5511933830735" target="_blank" rel="noopener noreferrer"
+     class="wpp-fab" aria-label="Falar com a 7arch pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="./main.js"></script>
+</body>
+</html>
