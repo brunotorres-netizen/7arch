@@ -235,35 +235,59 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const validNome = validateField('nome', 'group-nome',
+    var validNome = validateField('nome', 'group-nome',
       function(v) { return v.trim().length >= 2; },
       'Por favor, informe seu nome completo.');
 
-    const validEmail = validateField('email', 'group-email',
+    var validEmail = validateField('email', 'group-email',
       function(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); },
       'Informe um e-mail válido.');
 
-    const validTel = validateField('telefone', 'group-telefone',
+    var validTel = validateField('telefone', 'group-telefone',
       function(v) { return v.replace(/\D/g,'').length >= 10; },
       'Informe um telefone com DDD.');
 
-    const validBairro = validateField('bairro', 'group-bairro',
+    var validBairro = validateField('bairro', 'group-bairro',
       function(v) { return v.trim().length >= 2; },
       'Informe o bairro do apartamento.');
 
     if (!validNome || !validEmail || !validTel || !validBairro) {
-      // Scroll to first error
-      const firstError = form.querySelector('.error');
+      var firstError = form.querySelector('.error');
       if (firstError) firstError.focus();
       return;
     }
 
-    // Simulate success (no backend)
-    form.style.display = 'none';
-    success.classList.add('visible');
+    // Submit to Formspree via fetch
+    var submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando…';
+    }
 
-    // Scroll success into view
-    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(response) {
+      if (response.ok) {
+        form.style.display = 'none';
+        success.classList.add('visible');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        return response.json().then(function(data) {
+          throw new Error(data.errors ? data.errors.map(function(e){ return e.message; }).join(', ') : 'Erro ao enviar.');
+        });
+      }
+    })
+    .catch(function(err) {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar pré-briefing';
+      }
+      alert('Ops! Não foi possível enviar. Tente pelo WhatsApp ou e-mail: contato@7arch.com.br');
+      console.error('Formspree error:', err);
+    });
   });
 })();
 

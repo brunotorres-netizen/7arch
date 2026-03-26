@@ -468,7 +468,14 @@
             <h3>Pré-briefing</h3>
             <p>Preencha e entraremos em contato em até 24 horas.</p>
 
-            <form id="contato-form" novalidate aria-label="Formulário de pré-briefing">
+            <form id="contato-form"
+                  action="https://formspree.io/f/xvzvodbb"
+                  method="POST"
+                  novalidate
+                  aria-label="Formulário de pré-briefing">
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="_subject" value="Novo pré-briefing — 7arch">
               <div class="form-row">
                 <div class="form-group" id="group-nome">
                   <label for="nome">Nome *</label>
