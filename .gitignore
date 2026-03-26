@@ -2,3 +2,5 @@
 .claude/
 NOVO SITE_26.docx
 imagens-dadas/
+*.mov
+imagens-dadas/*.mp4

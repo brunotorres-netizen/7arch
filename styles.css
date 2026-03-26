@@ -648,6 +648,7 @@ p {
 .projeto-card.wide { grid-column: span 7; }
 .projeto-card.tall { grid-row: span 2; }
 .projeto-card.medium { grid-column: span 5; }
+.projeto-card.half { grid-column: span 6; }
 
 .projeto-card {
   position: relative;
